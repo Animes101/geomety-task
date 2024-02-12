@@ -52,7 +52,7 @@ rectangle.addEventListener('click',function(){
 
 })
 
-//Rectangle Area
+//Parallelogram Area
 
 const parallelogram=document.getElementById('parallelogram-button')
 parallelogram.addEventListener('click',function(){
@@ -78,7 +78,7 @@ parallelogram.addEventListener('click',function(){
 
 })
 
-//Rectangle Area
+//Rhombus Area
 
 const rhombus=document.getElementById('rhombus-button')
 rhombus.addEventListener('click',function(){
@@ -108,17 +108,17 @@ rhombus.addEventListener('click',function(){
 
 const pentagon=document.getElementById('pen-button')
 pentagon.addEventListener('click',function(){
-    const diagonal=document.getElementById('digonal');
-    const perimeter=document.getElementById('perimeter');
+    const diagonal=document.getElementById('diagonal');
+    const peramiter=document.getElementById('peramiter');
 
-    if(diagonal.value === '' && perimeter.value === ''){
+    if(diagonal.value === '' && peramiter.value === ''){
         alert('fill your input number');
     }
 
-    const pFlot=parseFloat(diagonal.value);
-    const bFlot=parseFloat(perimeter.value);
+    const d1=parseFloat(diagonal.value);
+    const d2=parseFloat(peramiter.value);
 
-    const area=0.5*pFlot*bFlot;
+    const area=0.5 * d1 * d2;
     calculate.innerText=`Pentagon Area=${area}`
     setTimeout(()=>{
         calculate.innerText='';
@@ -126,6 +126,32 @@ pentagon.addEventListener('click',function(){
 
 
     diagonal.value='';
-    perimeter.value='';
+    peramiter.value='';
+
+})
+
+//Ellipse Area
+
+const ellipse=document.getElementById('ell-button')
+ellipse.addEventListener('click',function(){
+    const axis1=document.getElementById('axis-1');
+    const axis2=document.getElementById('axis-2');
+
+    if(axis1.value === '' && axis2.value === ''){
+        alert('fill your input number');
+    }
+
+    const x1Flot=parseFloat(axis1.value);
+    const x2Flot=parseFloat(axis1.value);
+
+    const area=3.141 * x1Flot * x2Flot;
+    calculate.innerText=`Ellipse Area=${area}`
+    setTimeout(()=>{
+        calculate.innerText='';
+    },3000)
+
+
+    axis1.value='';
+    axis2.value='';
 
 })

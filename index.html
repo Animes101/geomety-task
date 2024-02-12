@@ -24,8 +24,8 @@
         <div class="flex gap-5">
             <div class="w-[70%] grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!--Triangle card-->
-                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
-                    <figure><img class="w-full h-[200px]" src="images/triangle.png" alt="triangle" /></figure>
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" src="images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                       <h2 class="font-bold text-3xl text-blue-600 text-center">Triangle</h2>
                       <p class="text-lg text-center font-semibold">Area (A) =0.5*b*h</p>
@@ -46,8 +46,8 @@
                   </div>
 
                    <!--Rectangle card-->
-                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
-                    <figure><img class="w-full h-[200px]" class="" src="images/rectangle.png" alt="Rectangle" /></figure>
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" class="" src="images/rectangle.png" alt="Rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="font-bold text-3xl text-blue-600 text-center">Rectangle</h2>
                       <p class="text-lg text-center font-semibold">Area (A) = w * I</p>
@@ -68,8 +68,8 @@
                   </div>
 
                         <!--Parallelogram card-->
-                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
-                    <figure><img class="w-full h-[200px]" class="" src="images/parallelogram.png" alt="Rectangle" /></figure>
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" class="" src="images/parallelogram.png" alt="Rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="font-bold text-3xl text-blue-600 text-center">Parallelogram</h2>
                       <p class="text-lg text-center font-semibold">Area (A) = b * h</p>
@@ -90,8 +90,8 @@
                   </div>
 
                           <!--Rhombus card-->
-                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
-                    <figure><img class="w-full h-[200px]" class="" src="images/rhombus.png" alt="Rectangle" /></figure>
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" class="" src="images/rhombus.png" alt="Rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="font-bold text-3xl text-blue-600 text-center">Rhombus</h2>
                       <p class="text-lg text-center font-semibold">Area (A) =0.5* d<sub>1</sub> * d <sub>2</sub></p>
@@ -112,23 +112,45 @@
                   </div>
 
                                <!--Pentagon card-->
-                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
-                    <figure><img class="w-full h-[200px]" class="" src="images/pentagon.png" alt="Rectangle" /></figure>
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" class="" src="images/pentagon.png" alt="Rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="font-bold text-3xl text-blue-600 text-center">Pentagon</h2>
                       <p class="text-lg text-center font-semibold">Area (A) =0.5* p * b</p>
                       <div class="flex gap-3">
                         <div class="flex flex-1">
-                            <input type="text" id="digonal" placeholder="p" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <input type="text" id="diagonal" placeholder="p" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
                             <h3 class="text-base text-gray-700 p-2">cm</h3>
                         </div>
                         <div class="flex flex-1">
-                            <input id="perimeter" type="text" placeholder="b" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <input id="peramiter" type="text" placeholder="b" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
                             <h3 class="text-base text-gray-700 p-2">cm</h3>
                         </div>
                       </div>
                       <div class="card-actions justify-end">
                         <button id="pen-button" class="btn btn-primary text-black w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                     <!--Ellipse card-->
+                <div class="card p-4 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-[90%] mx-auto block h-[200px]" class="" src="images/ellipse.png" alt="Rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-3xl text-blue-600 text-center">Ellipse</h2>
+                      <p class="text-lg text-center font-semibold">Area (A) =ab</p>
+                      <div class="flex gap-3">
+                        <div class="flex flex-1">
+                            <input type="text" id="axis-1" placeholder="axis-1" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                        <div class="flex flex-1">
+                            <input id="axis-2" type="text" placeholder="axis-2" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button id="ell-button" class="btn btn-primary text-black w-full">Calculate</button>
                       </div>
                     </div>
                   </div>

@@ -20,15 +20,80 @@
 
     </header>
     <!--main area-->
-    <main>
-        <div class="flex">
-            <div class="w-[70%]">
+    <main class="m-10">
+        <div class="flex gap-5">
+            <div class="w-[70%] grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!--Triangle card-->
-                
+                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-[200px]" src="images/triangle.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-3xl text-blue-600 text-center">Triangle</h2>
+                      <p class="text-lg text-center font-semibold">Area (A) =0.5*b*h</p>
+                      <div class="flex gap-3">
+                        <div class="flex flex-1">
+                            <input type="text" id="base-triangle" placeholder="b" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                        <div class="flex flex-1">
+                            <input id="triangleHeight" type="text" placeholder="h" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button id="triangle-button" class="btn btn-primary text-black w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!--Rectangle card-->
+                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-[200px]" class="" src="images/rectangle.png" alt="Rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-3xl text-blue-600 text-center">Rectangle</h2>
+                      <p class="text-lg text-center font-semibold">Area (A) = w * I</p>
+                      <div class="flex gap-3">
+                        <div class="flex flex-1">
+                            <input type="text" id="rec-length" placeholder="w" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                        <div class="flex flex-1">
+                            <input id="rec-height" type="text" placeholder="i" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button id="rectangle-button" class="btn btn-primary text-black w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                        <!--Parallelogram card-->
+                <div class="card p-2 card-compact bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-[200px]" class="" src="images/parallelogram.png" alt="Rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-3xl text-blue-600 text-center">Parallelogram</h2>
+                      <p class="text-lg text-center font-semibold">Area (A) = b * h</p>
+                      <div class="flex gap-3">
+                        <div class="flex flex-1">
+                            <input type="text" id="para-base" placeholder="b" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                        <div class="flex flex-1">
+                            <input id="para-height" type="text" placeholder="h" class=" w-full rounded-md border border-purple-700 p-2 outline-none" />
+                            <h3 class="text-base text-gray-700 p-2">cm</h3>
+                        </div>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button id="parallelogram-button" class="btn btn-primary text-black w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
             </div>
             <!--Area Calculation-->
-            <div class="w-[30%] border-2 border-gray-500 h-screen rounded-lg">
+            <div class="w-[30%] border-2 border-gray-500 rounded-lg">
                 <h2 class="text-center text-4xl underline">Area Calculation</h2>
+                <p class="text-center text-3xl mt-6" id="calculate"></p>
             </div>
         </div>
     </main>

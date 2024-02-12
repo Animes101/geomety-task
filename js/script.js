@@ -77,3 +77,55 @@ parallelogram.addEventListener('click',function(){
     paraHeight.value='';
 
 })
+
+//Rectangle Area
+
+const rhombus=document.getElementById('rhombus-button')
+rhombus.addEventListener('click',function(){
+    const diagonal1=document.getElementById('diagonal-1');
+    const diagonal2=document.getElementById('diagonal-2');
+
+    if(diagonal1.value === '' && diagonal2.value === ''){
+        alert('fill your input number');
+    }
+
+    const d1=parseFloat(diagonal1.value);
+    const d2=parseFloat(diagonal2.value);
+
+    const area=(d1 * d2) /2;
+    calculate.innerText=`Rhombus Area=${area}`
+    setTimeout(()=>{
+        calculate.innerText='';
+    },3000)
+
+
+    diagonal1.value='';
+    diagonal2.value='';
+
+})
+
+//Pentagon Area
+
+const pentagon=document.getElementById('pen-button')
+pentagon.addEventListener('click',function(){
+    const diagonal=document.getElementById('digonal');
+    const perimeter=document.getElementById('perimeter');
+
+    if(diagonal.value === '' && perimeter.value === ''){
+        alert('fill your input number');
+    }
+
+    const pFlot=parseFloat(diagonal.value);
+    const bFlot=parseFloat(perimeter.value);
+
+    const area=0.5*pFlot*bFlot;
+    calculate.innerText=`Pentagon Area=${area}`
+    setTimeout(()=>{
+        calculate.innerText='';
+    },3000)
+
+
+    diagonal.value='';
+    perimeter.value='';
+
+})
